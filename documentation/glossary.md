@@ -1,7 +1,7 @@
 Glossary
 Entities & Attributes (maxima & minima in parens)
 
-pattern_author: the creator of the pattern 
+pattern_author: the creator of the pattern
   synonyms: creator, pattern_maker, pattern_designer 
   Attributes:
     author_id : The entry identification of the author as an int value (1-1)(1) (PK) (INT)
@@ -9,7 +9,7 @@ pattern_author: the creator of the pattern
     language : the language the pattern is written in (1-1)(0) VARCHAR(45)
  
 knitting_pattern: a table of pattern info and links to images 
-  synonyms: charts, knitting_designs, clothing designs 
+	synonyms: charts, knitting_designs, clothing designs 
   Attributes:
     pattern_link: link to image url that displays picture of image (1-1)(1) (NOT NULL) VARCHAR(45)
     Pattern_id: The entry identification of the pattern as an int value (1-1)(1) (PK) INT
