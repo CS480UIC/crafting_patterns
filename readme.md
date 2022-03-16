@@ -4,6 +4,7 @@ Our team members are Martina Skalova, and Adam Ciuris.
 
 It will hold and organize several knitting patterns and help provide clothing for the poor. It uses the default tech stack provided.
 
+
 CRUDS for crafting_patterns
 
 Images for what the website looks like. Note that the four CRUD are from there own jsps.
