@@ -8,7 +8,7 @@ CRUD for pattern_author
 
 [pd6 screenshots - Google Docs.pdf](https://github.com/CS480UIC/crafting_patterns/files/8258591/pd6.screenshots.-.Google.Docs.pdf)
 
-
+Images for what the website looks like. Note that the four CRUD are from there own jsps.
 ![adam pattern_author](https://github.com/CS480UIC/crafting_patterns/tree/main/documentation/images/screen01.png?raw=true)
 
 ![adam knitting_pattern](https://github.com/CS480UIC/crafting_patterns/tree/main/documentation/images/screen02.png?raw=true)
