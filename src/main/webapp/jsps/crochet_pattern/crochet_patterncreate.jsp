@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>crochet_pattern Create</title>
+    <title>crochet_pattern_yarn Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,24 +21,16 @@
   </head>
   
   <body>
-  <h1>crochet_pattern Create</h1>
+  <h1>crochet_pattern_yarn Create</h1>
 <form action="<c:url value='/crochet_patternServletCreate'/>" method="post">
-	pattern_link    :<input type="text" name="pattern_link" value="${form.pattern_link }"/>
+	yarn_id    :<input type="text" name="pattern_link" value="${form.pattern_link }"/>
 	<span style="color: red; font-weight: 900">${errors.pattern_link }</span>
 	<br/>
 	pattern_id：<input type="text" name="pattern_id" value="${form.pattern_id }"/>
 	<span style="color: red; font-weight: 900">${errors.pattern_id }</span>
 	<br/>
-	hook_size	：<input type="text" name="hook_size" value="${form.hook_size }"/>
-	<span style="color: red; font-weight: 900">${errors.hook_size }</span>
-	<br/>
-	pattern_author	：<input type="text" name="pattern_author" value="${form.pattern_author }"/>
-	<span style="color: red; font-weight: 900">${errors.pattern_author }</span>
-	<br/>
-	category	：<input type="text" name="category" value="${form.category }"/>
-	<span style="color: red; font-weight: 900">${errors.category }</span>
-	<br/>
-	<input type="submit" value="Create crochet_pattern"/>
+	
+	<input type="submit" value="Create crochet_pattern_yarn"/>
 </form>
   </body>
 </html>

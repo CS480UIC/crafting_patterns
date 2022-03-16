@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read crochet_pattern</title>
+    <title>Read crochet_pattern_yarn</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,23 +21,14 @@
   </head>
   
   <body>
-  <h1>Read crochet_pattern</h1>
+  <h1>Read crochet_pattern_yarn</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/crochet_patternServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	pattern_link    :<input type="text" name="username" value="${form.username }"/>
+	yarn_id    :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 		pattern_id    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		hook_size    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		pattern_author    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		category    :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
@@ -46,7 +37,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/> --%>
-	<input type="submit" value="Read crochet_pattern"/>
+	<input type="submit" value="Read crochet_pattern_yarn"/>
 </form>
   </body>
 </html>
