@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update crochet_pattern</title>
+    <title>Update crochet_pattern_yarn</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -27,22 +27,13 @@
 	Update User   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-		Update pattern_link   :<input type="text" name="username" value="${form.username }"/>
+		Update yarn_id   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 		Update pattern_id   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-		Update hook_size   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Update pattern_author   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-			Update category   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-	<input type="submit" value="Update crochet_pattern"/>
+	<input type="submit" value="Update crochet_pattern_yarn"/>
 </form>
   </body>
 </html>
