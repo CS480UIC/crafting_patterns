@@ -18,7 +18,9 @@ Images for what the website looks like. Note that the four CRUD are from there o
 
 ![adam knitting_pattern_yarn](https://github.com/CS480UIC/crafting_patterns/tree/main/documentation/images/screen04.png?raw=true)
 
+![crochet_pattern](https://github.com/CS480UIC/crafting_patterns/blob/main/documentation/images/crochet_pattern_yarn%20-%20Google%20Docs.pdf)
 
+![crochet_pattern_yarn](https://github.com/CS480UIC/crafting_patterns/blob/main/documentation/images/crochet_patterns%20-%20Google%20Docs.pdf)
 
 
 
