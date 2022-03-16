@@ -22,11 +22,12 @@
   
   <body>
   <h1>Delete pattern_author</h1>
-<form action="<c:url value='/pattern_authorServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete author_id   :<input type="text" name="username" value="${form.author_id }"/>
+	<span style="color: red; font-weight: 900">${errors.author_id }</span>
 	<br/>
+	
 	<input type="submit" value="Delete pattern_author"/>
 </form>
   </body>

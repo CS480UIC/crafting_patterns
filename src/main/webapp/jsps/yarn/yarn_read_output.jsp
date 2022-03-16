@@ -24,11 +24,21 @@
   <h1>Read Entity Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	author_id    :<input type="text" name="username" value="${pattern_author.author_id }" disabled/>
+	yarn_id    :<input type="text" name="yarn_id" value="${form.yarn_id}"disabled/>
 	<br/>
-	full_name：<input type="text" name="full_name" value="${pattern_author.full_name }" disabled/>
+	weight：<input type="text" name="weight" value="${form.weight }"disabled/>
 	<br/>
-	language	：<input type="text" name="language" value="${pattern_author.language }" disabled/>
+	yardage	：<input type="text" name="yardage" value="${form.yardage }"disabled/>
+	<br/>
+		fiber	：<input type="text" name="fiber" value="${form.fiber }"disabled/>
+	<br/>
+		recommended_hook_size	：<input type="text" name="recommended_hook_size" value="${form.recommended_hook_size }"disabled/>
+	<br/>
+		recommended_needle_size	：<input type="text" name="recommended_needle_size" value="${form.recommended_needle_size }"disabled/>
+	<br/>
+		name	：<input type="text" name="name" value="${form.name }"disabled/>
+	<br/>
+		manufacturer	：<input type="text" name="manufacturer" value="${form.manufacturer }"disabled/>
 	<br/>
 </form>
 

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,16 @@
   </head>
   
   <body>
-  <h1>Delete Entity1</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Read Entity Output</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	pattern_id    :<input type="text" name="pattern_id" value="${knitting_pattern_yarn.pattern_id }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+
+	yarn_id	：<input type="text" name="yarn_id" value="${knitting_pattern_yarn.yarn_id }" disabled/>
+	<br/>
 </form>
-  </body>
+
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
+</body>
 </html>

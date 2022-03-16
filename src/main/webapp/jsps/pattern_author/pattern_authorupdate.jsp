@@ -22,10 +22,16 @@
   
   <body>
   <h1>Update</h1>
-<form action="<c:url value='/pattern_authorServletUpdate'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	author_id   :<input type="text" name="username" value="${form.author_id }"/>
+	<span style="color: red; font-weight: 900">${errors.author_id}</span>
+	<br/>
+		full_name：<input type="text" name="text" value="${form.full_name }"/>
+	<span style="color: red; font-weight: 900">${errors.full_name }</span>
+	<br/>
+	language：<input type="text" name="email" value="${form.language }"/>
+	<span style="color: red; font-weight: 900">${errors.language }</span>
 	<br/>
 	<input type="submit" value="Update pattern_author"/>
 </form>

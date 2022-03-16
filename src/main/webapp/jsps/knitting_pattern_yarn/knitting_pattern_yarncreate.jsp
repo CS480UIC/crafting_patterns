@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>knitting_pattern_yarn Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,16 @@
   </head>
   
   <body>
-  <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>knitting_pattern_yarn Create</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	pattern_id    :<input type="text" name="pattern_id" value="${form.pattern_id }"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_id }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+
+	yarn_id	：<input type="text" name="yarn_id" value="${form.yarn_id }"/>
+	<span style="color: red; font-weight: 900">${errors.yarn_id }</span>
+	<br/>
+	<input type="submit" value="Create knitting_pattern_yarn"/>
 </form>
   </body>
 </html>
