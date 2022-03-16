@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>pattern_author Create</title>
+    <title>crafting_patterns</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +22,12 @@
   </head>
   
   <body>
-  <h1>pattern_author Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	author_id    :<input type="text" name="username" value="${form.author_id }"/>
-	<span style="color: red; font-weight: 900">${errors.author_id }</span>
-	<br/>
-	full_name：<input type="text" name="text" value="${form.full_name }"/>
-	<span style="color: red; font-weight: 900">${errors.full_name }</span>
-	<br/>
-	language：<input type="text" name="email" value="${form.language }"/>
-	<span style="color: red; font-weight: 900">${errors.language }</span>
-	<br/>
-	<input type="submit" value="Create pattern_author"/>
-</form>
+    <h1>CRUD operations for yarn</h1>
+    <br>
+	<a href="<c:url value='/jsps/yarn/yarncreate.jsp'/>" target="_parent">Create yarn</a> |&nbsp; 
+	<a href="<c:url value='/jsps/yarn/yarnread.jsp'/>" target="_parent">Read yarn</a> |&nbsp;
+	<a href="<c:url value='/jsps/yarn/yarnupdate.jsp'/>" target="_parent">Update yarn</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/yarn/yarndelete.jsp'/>" target="_parent">Delete yarn</a>	
+	    
   </body>
 </html>

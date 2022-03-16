@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,20 +21,22 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Read Entity Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+<form>
+
+	pattern_id    :<input type="text" name="pattern_idname" value="${form.pattern_id}" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	pattern_link：<input type="text" name="pattern_link" value="${form.pattern_link }"disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	needle_size	：<input type="text" name="needle_size" value="${form.needle_size }"disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+		category	：<input type="text" name="category" value="${form.category }"disabled/>
+	<br/>
+		yarn_id	：<input type="text" name="yarn_id" value="${form.yarn_id }"disabled/>
+	<br/>
 </form>
 
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
 </body>
 </html>

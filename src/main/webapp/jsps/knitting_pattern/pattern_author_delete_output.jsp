@@ -25,15 +25,23 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="author_id" value="${pattern_author.author_id }"/>
-	author_id    :<input type="text" name="author_id" value="${pattern_author.author_id}" disabled/>
+		<input type="hidden" name="username" value="${knitting_pattern.pattern_id }"/>
+	pattern_id    :<input type="text" name="pattern_idname" value="${form.pattern_id}"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_id}</span>
 	<br/>
-	
-	full_name：<input type="text" name="full_name" value="${pattern_author.full_name }" disabled/>
+	pattern_link：<input type="text" name="pattern_link" value="${form.pattern_link }"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_link }</span>
 	<br/>
-	language	：<input type="text" name="language" value="${pattern_author.language }" disabled/>
+	needle_size	：<input type="text" name="needle_size" value="${form.needle_size }"/>
+	<span style="color: red; font-weight: 900">${errors.needle_size }</span>
 	<br/>
-	<input type="submit" value="Delete pattern_author"/>
+		category	：<input type="text" name="category" value="${form.category }"/>
+	<span style="color: red; font-weight: 900">${errors.needle_size }</span>
+	<br/>
+		yarn_id	：<input type="text" name="yarn_id" value="${form.yarn_id }"/>
+	<span style="color: red; font-weight: 900">${errors.needle_size }</span>
+	<br/>
+	<input type="submit" value="Delete knitting_pattern"/>
 </form>
 
 </body>

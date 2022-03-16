@@ -5,9 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="">
     
-    <title>body</title>
+    <title>Delete yarn</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,12 +21,13 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Entity1 </h1>
-    <br>
-	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
-	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
-	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>	
-	    
+  <h1>Delete yarn</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Delete yarn_id   :<input type="text" name="yarn_id" value="${form.yarn_id }"/>
+	<span style="color: red; font-weight: 900">${errors.yarn_id }</span>
+	<br/>
+	<input type="submit" value="Delete yarn"/>
+</form>
   </body>
 </html>

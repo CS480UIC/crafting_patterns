@@ -43,7 +43,10 @@
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/pattern_author/menu.jsp'/>" target="body">CRUD pattern_author</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/knitting_pattern/menu.jsp'/>" target="body">CRUD knitting_pattern</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/yarn/menu.jsp'/>" target="body">CRUD yarn</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/knitting_pattern_yarn/menu.jsp'/>" target="body">CRUD knitting_pattern_yarn</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>

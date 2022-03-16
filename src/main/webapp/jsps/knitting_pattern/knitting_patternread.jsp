@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity1</title>
+    <title>Read knitting_pattern</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,20 +21,21 @@
   </head>
   
   <body>
-  <h1>Read Entity1</h1>
+  <h1>Read knitting_pattern</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	pattern_id    :<input type="text" name="pattern_idname" value="${form.pattern_id}"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_id}</span>
 	<br/>
+
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/> --%>
-	<input type="submit" value="Read Entity1"/>
+	<input type="submit" value="Read knitting_pattern"/>
 </form>
   </body>
 </html>
