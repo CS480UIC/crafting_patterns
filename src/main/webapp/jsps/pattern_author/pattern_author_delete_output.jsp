@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/pattern_authorServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${pattern_author.username }"/>
+		<input type="hidden" name="test" value="${pattern_author.test }"/>
 	User    :<input type="text" name="username" value="${pattern_author.username }" disabled/>
 	<br/>
 	

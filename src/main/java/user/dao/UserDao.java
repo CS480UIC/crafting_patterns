@@ -21,12 +21,12 @@ public class UserDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "myTeam";  //TODO change user
+	private String MySQL_user = "crafting_patterns";  //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "passw";  //TODO change password
+	private String MySQL_password = "password";  //TODO change password
 	
 	/**
 	 * get the Search result with Username 
