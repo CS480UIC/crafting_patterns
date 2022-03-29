@@ -1,0 +1,6 @@
+Timestamp,author_id (PK) (INT),full_name VARCHAR(45),language VARCHAR(45)
+3/29/2022 18:38:53,1,Drake Shane,English
+3/29/2022 18:39:06,2,Carmela Soprano,Italian
+3/29/2022 18:40:42,3,Clifford Redding,Woof
+3/29/2022 18:48:59,4,Blake Mane,Englando
+3/29/2022 18:49:27,5,Takanashi Kiara,Japanese

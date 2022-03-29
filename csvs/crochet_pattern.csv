@@ -1,0 +1,7 @@
+Timestamp,pattern_link VARCHAR(45),pattern_id (PK) VARCHAR(45),hook_size DOUBLE,pattern_author (FK) VARCHAR(45),category VARCHAR(45)
+3/29/2022 18:35:54,www.craftingdb.com/redbikini,45,B,Camila Cabello,Swimwear
+3/29/2022 18:36:21,www.craftingdb.com/blueanorak,6,M,Frosty the Snowman,Jacket
+3/29/2022 18:36:50,www.craftingdb.com/blackdogcoat,8,L,Clifford Redding,Dogwear
+3/29/2022 18:37:33,www.craftingdb.com/classicbeanie,9,D,Carmela Soprano,Hat
+3/29/2022 18:38:06,www.craftingdb.com/simpleshawl,10,J,Sandra Cortuga,Shawl
+3/29/2022 18:38:32,www.craftingdb.com/anotherone,11,O,Drake Shane,Miscellaneous
