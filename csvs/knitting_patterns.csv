@@ -1,4 +1,4 @@
-pattern_id(PK) INT,pattern_link (NOT NULL) VARCHAR(45),needle_size INT,category VARCHAR(45),author_id (FK) VARCHAR(45)
+pattern_id(PK) INT,pattern_link (NOT NULL) VARCHAR(45),needle_size INT,category VARCHAR(45),author_id (FK) INT
 1,www.knittingpaternlink.com,5,shawl,1
 2,www.google.com,1,Yarnlike,2
 3,www.links.com,1,Wow,2
