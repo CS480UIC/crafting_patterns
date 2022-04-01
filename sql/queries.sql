@@ -25,14 +25,17 @@ Minimum N complex queries.
   A complex query searches data in two or more tables.
   X From the N queries, at least one should use a join (any type of join).
   From the N queries, at least one should use a correlated subquery (without EXIST).
-  From the N queries, at least one should use a correlated subquery that uses the EXIST clause
+  X From the N queries, at least one should use a correlated subquery that uses the EXIST clause
 
   
  SELECT* from knitting_pattern
     LEFT JOIN crochet_pattern
     ON knitting_pattern.author_id = crochet_pattern.author_id;
     
- SELECT* from pattern_author
-    
+ SELECT* from crochet_pattern cp
+    WHERE hook_size > 
+      (SELECT AVG(hook_size)
+      FROM crochet_pattern
+      WHERE hook_size = cp.hook_size);
 
   
