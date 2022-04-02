@@ -1,7 +1,7 @@
-pattern_link VARCHAR(45),pattern_id (PK) VARCHAR(45),hook_size DOUBLE,pattern_author (FK) INT,category VARCHAR(45)
-www.craftingdb.com/redbikini,45,B,1,Swimwear
-www.craftingdb.com/blueanorak,6,M,2,Jacket
-www.craftingdb.com/blackdogcoat,8,L,3,Dogwear
-www.craftingdb.com/classicbeanie,9,D,4,Hat
-www.craftingdb.com/simpleshawl,10,J,5,Shawl
-www.craftingdb.com/anotherone,11,O,3,Miscellaneous
+pattern_id (PK) VARCHAR(45), pattern_link VARCHAR(45),hook_size DOUBLE,author_id (FK) INT,category VARCHAR(45)
+1, www.craftingdb.com/redbikini,45,1,Swimwear
+2, www.craftingdb.com/blueanorak,6,2,Jacket
+3, www.craftingdb.com/blackdogcoat,8,3,Dogwear
+4, www.craftingdb.com/classicbeanie,9,4,Hat
+5, www.craftingdb.com/simpleshawl,10,5,Shawl
+6, www.craftingdb.com/anotherone,11,3,Miscellaneous
