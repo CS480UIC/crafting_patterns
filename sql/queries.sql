@@ -30,8 +30,8 @@ COMPLEX QUERIES
 Minimum N complex queries.
   A complex query searches data in two or more tables.
   X From the N queries, at least one should use a join (any type of join).
-  From the N queries, at least one should use a correlated subquery (without EXIST).
-  X From the N queries, at least one should use a correlated subquery that uses the EXIST clause
+  X From the N queries, at least one should use a correlated subquery (without EXIST).
+  From the N queries, at least one should use a correlated subquery that uses the EXIST clause
 
   
  SELECT * from knitting_pattern
