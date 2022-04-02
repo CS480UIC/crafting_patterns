@@ -5,7 +5,10 @@ SIMPLE QUERIES
 SELECT* from knitting_patterns
   WHERE category = shawl
   ORDER BY pattern_id;
- 
+  
+SELECT * from pattern_author
+  WHERE date_joined >= '2002-01-02'
+  ORDER BY author_id;
  
 AGGREGATE QUERIES
 Minimum N aggregate queries or queries with functions. 
@@ -19,6 +22,9 @@ SELECT COUNT(*)
   FROM pattern_author 
   WHERE DAY(date_joined) = 30;
 
+SELECT COUNT(*) from pattern_author
+  WHERE date_joined >= '2010-01-01'
+  ORDER BY author_id;
 
 COMPLEX QUERIES
 Minimum N complex queries.
@@ -28,11 +34,13 @@ Minimum N complex queries.
   X From the N queries, at least one should use a correlated subquery that uses the EXIST clause
 
   
- SELECT* from knitting_pattern
+ SELECT * from knitting_pattern
     LEFT JOIN crochet_pattern
     ON knitting_pattern.author_id = crochet_pattern.author_id;
     
- SELECT* from crochet_pattern cp
+ 
+  
+ SELECT * from crochet_pattern cp
     WHERE hook_size > 
       (SELECT AVG(hook_size)
       FROM crochet_pattern

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -58,7 +58,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -111,7 +111,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -162,7 +162,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:16
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -219,7 +219,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -272,7 +272,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -325,7 +325,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -376,7 +376,7 @@ UNLOCK TABLES;
 -- Dump completed on 2022-04-01 19:27:17
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookstore
+-- Host: localhost    Database: patterns
 -- ------------------------------------------------------
 -- Server version	8.0.28
 

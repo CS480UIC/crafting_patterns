@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS bookstore;
-use bookstore;
+CREATE DATABASE IF NOT EXISTS patterns;
+use patterns;
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS entity1;
 DROP TABLE IF EXISTS knitting_pattern_yarn;

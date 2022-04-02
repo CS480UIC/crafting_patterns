@@ -1,7 +1,7 @@
-CREATE DATABASE bookstore;
+CREATE DATABASE patterns;
 
 
-use  bookstore;
+use  patterns;
 
 CREATE TABLE user
 (
