@@ -40,7 +40,7 @@ CREATE TABLE knitting_pattern (
 	ON DELETE SET NULL
 	ON UPDATE CASCADE
     );
-INSERT INTO `knitting_pattern` (`pattern_id`, `pattern_link`, `needle_siknitting_patternze`, `category`, `author_id`) VALUES (1,'www.knittingpaternlink.com',5,'shawl',1),(2,'www.google.com',1,'Yarnlike',2),(3,'www.links.com',1,'Wow',2),(4,'www.youtube.com',1,'Animaru',4),(5,'imgur.com',1,'Helicopter',4),(6,'pngstorm.com',3,'Fourchan',3),(7,'auugh.com',2,'Blue',3);
+INSERT INTO `knitting_pattern` (`pattern_id`, `pattern_link`, `needle_size`, `category`, `author_id`) VALUES (1,'www.knittingpaternlink.com',5,'shawl',1),(2,'www.google.com',1,'Yarnlike',2),(3,'www.links.com',1,'Wow',2),(4,'www.youtube.com',1,'Animaru',4),(5,'imgur.com',1,'Helicopter',4),(6,'pngstorm.com',3,'Fourchan',3),(7,'auugh.com',2,'Blue',3);
 CREATE TABLE crochet_pattern (
 	pattern_id INT,
     pattern_link VARCHAR(45) unique,
