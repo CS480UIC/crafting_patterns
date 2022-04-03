@@ -42,10 +42,10 @@ public class InitializeServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("called the servlet");
-		InitService fuck = new InitService();
+		InitService initService = new InitService();
 		
 		try {
-			fuck.initializeDB();
+			initService.initializeDB();
 			response.sendRedirect( request.getContextPath() + "/jsps/user/login.jsp");
 		} catch (Exception e) {
 			e.printStackTrace();

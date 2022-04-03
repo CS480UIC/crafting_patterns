@@ -1,7 +1,6 @@
 package init.service;
 
 import java.util.List;
-
 import init.dao.InitDao;
 
 
@@ -21,3 +20,4 @@ public class InitService {
 	}
 
 }
+ 
