@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS patterns;
-use patterns;
+CREATE DATABASE IF NOT EXISTS crafting_patterns;
+use crafting_patterns;
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS entity1;
 DROP TABLE IF EXISTS knitting_pattern_yarn;
