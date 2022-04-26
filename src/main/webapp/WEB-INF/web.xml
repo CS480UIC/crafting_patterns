@@ -84,7 +84,16 @@
   </servlet-mapping>
 
   
-  
+    <servlet>
+    <description></description>
+    <display-name>Yarnread</display-name>
+    <servlet-name>Yarnread</servlet-name>
+    <servlet-class>yarn.web.servlet.YarnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Yarnread</servlet-name>
+    <url-pattern>/Yarnread</url-pattern>
+  </servlet-mapping>
   
   
   
