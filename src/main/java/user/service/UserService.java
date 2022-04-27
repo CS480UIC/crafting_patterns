@@ -42,4 +42,8 @@ public class UserService {
 		return userDao.findall();
 		
 	}
+	public List<Object> doThis(String statement)throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.doThis(statement);
+		
+	}
 }

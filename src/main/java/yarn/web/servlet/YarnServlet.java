@@ -43,6 +43,7 @@ public class YarnServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("called the servlet");
 		YarnReadService yarnService = new YarnReadService();
+		
 			try {
 				request.setAttribute("YarnList", yarnService.readAll());
 			} catch ( Exception e) {
