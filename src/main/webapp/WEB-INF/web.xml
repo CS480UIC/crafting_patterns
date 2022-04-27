@@ -84,6 +84,41 @@
   </servlet-mapping>
 
   
+      <servlet>
+    <description></description>
+    <display-name>YarnServletCreate</display-name>
+    <servlet-name>YarnServletCreate</servlet-name>
+    <servlet-class>yarn.web.servlet.YarnServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>YarnServletCreate</servlet-name>
+    <url-pattern>/YarnServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+          <servlet>
+    <description></description>
+    <display-name>YarnServletUpdate</display-name>
+    <servlet-name>YarnServletUpdate</servlet-name>
+    <servlet-class>yarn.web.servlet.YarnServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>YarnServletUpdate</servlet-name>
+    <url-pattern>/YarnServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>YarnServletDelete</display-name>
+    <servlet-name>YarnServletDelete</servlet-name>
+    <servlet-class>yarn.web.servlet.YarnServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>YarnServletDelete</servlet-name>
+    <url-pattern>/YarnServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
     <servlet>
     <description></description>
     <display-name>Yarnread</display-name>

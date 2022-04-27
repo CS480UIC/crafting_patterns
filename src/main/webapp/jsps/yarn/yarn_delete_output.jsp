@@ -23,27 +23,19 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${yarn.yarn_id }"/>
-	yarn_id    :<input type="text" name="yarn_id" value="${form.yarn_id}"disabled/>
-	<br/>
-	weight：<input type="text" name="weight" value="${form.weight }"disabled/>
-	<br/>
-	yardage	：<input type="text" name="yardage" value="${form.yardage }"disabled/>
-	<br/>
-		fiber	：<input type="text" name="fiber" value="${form.fiber }"disabled/>
-	<br/>
-		recommended_hook_size	：<input type="text" name="recommended_hook_size" value="${form.recommended_hook_size }"disabled/>
-	<br/>
-		recommended_needle_size	：<input type="text" name="recommended_needle_size" value="${form.recommended_needle_size }"disabled/>
-	<br/>
-		name	：<input type="text" name="name" value="${form.name }"disabled/>
-	<br/>
-		manufacturer	：<input type="text" name="manufacturer" value="${form.manufacturer }"disabled/>
-	<br/>
-	<input type="submit" value="Delete yarn"/>
-</form>
+	<h3 align="center"> please </h3>
+	<table border="1" width="70%" align="center">
+	<tr>
+		<th>Yarn deleted entry</th>
+
+	</tr>
+<c:forEach items="${form}" var="User">
+	<tr>
+		<td>${User}</td>
+
+	</tr>
+</c:forEach>
+</table>
 
 </body>
 </html>

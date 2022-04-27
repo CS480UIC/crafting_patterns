@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete yarn</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/YarnServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete yarn_id   :<input type="text" name="yarn_id" value="${form.yarn_id }"/>
 	<span style="color: red; font-weight: 900">${errors.yarn_id }</span>

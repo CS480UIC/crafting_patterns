@@ -23,7 +23,29 @@
   
   <body>
     <h1>Welcome to the Demo</h1>
-    <br>
+    <br>    <br>
+    
+    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+    <br>    <br>
+    
+    <a href="<c:url value='/patternAuthorServ'/>" target="body">SELECT * from pattern_author
+  WHERE date_joined >= '2002-01-02'
+  ORDER BY author_id;</a>&nbsp;&nbsp;
+    <br>    <br>
+    
+    <a href="<c:url value='Yarnread'/>" target="body">Select yarn_id, recommended_needle_size, fiber
+	from yarn
+    group by yarn_id
+    having Sum(recommended_hook_size > 1);</a>&nbsp;&nbsp;
+    <br>    <br>
+    
+    <a href="<c:url value='/cp'/>" target="body"> SELECT * from crochet_pattern cp
+    WHERE hook_size > 
+      (SELECT AVG(hook_size)
+      FROM crochet_pattern
+      WHERE hook_size = cp.hook_size);</a>&nbsp;&nbsp;
+    <br>    <br>
+    
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
  
     

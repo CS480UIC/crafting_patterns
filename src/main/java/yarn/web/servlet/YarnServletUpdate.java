@@ -11,22 +11,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import user.service.UserService;
+import yarn.domain.Yarn;
+import yarn.service.YarnException;
 import yarn.service.YarnReadService;
 import yarn.*;
-
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class YarnServlet extends HttpServlet {
+public class YarnServletUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public YarnServlet() {
+    public YarnServletUpdate() {
         super();
     }
 
@@ -41,27 +41,36 @@ public class YarnServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("called the servlet");
-		YarnReadService yarnService = new YarnReadService();
-			try {
-				request.setAttribute("YarnList", yarnService.readAll());
-			} catch ( Exception e) {
-				e.printStackTrace();
-			}
-			try {
-				List<Object> li = yarnService.readAll();
-				for(int i = 0; i < li.size();i++){
-					System.out.println(li.get(i).toString());
-				}
-				
-			} catch ( Exception e) {
-				e.printStackTrace();
-			}
+		YarnReadService yarnservice = new YarnReadService();
+		Map<String,String[]> paramMap = request.getParameterMap();
+		Yarn form = new Yarn();
+		List<String> info = new ArrayList<String>(8);
+		int count = 0;
+		for(String name : paramMap.keySet()) {
+			String[] values = paramMap.get(name);
+			System.out.println("values: "+values[0]);
+			info.add(values[0]);
+			count++;
+		}
+		System.out.println(info);
+		form.set1(info.get(1));
+		form.set2(info.get(1));
+		form.set3(info.get(2));
+		form.set4(info.get(3));
+		form.set5(info.get(4));
+		form.set6(info.get(5));
+		form.set7(info.get(6));
+		form.set8(info.get(7));
+
+		
+		try {
 			
-			
-			request.getRequestDispatcher("/jsps/yarn/yarn_list.jsp").forward(request, response);
+			yarnservice.update(form);
+			response.sendRedirect( request.getContextPath() + "/jsps/yarn/yarn_update_output.jsp");
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		
-	
+	}
 
 }
