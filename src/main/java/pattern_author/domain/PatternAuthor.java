@@ -9,15 +9,12 @@ import java.sql.Date;
  * 
  */
 public class PatternAuthor {
-	/*
-	 * Correspond to the user table
-	 */
-	
+
 	private Integer author_id;
 	private String full_name;
-	private String user_Language;
+	private String user_language;
 	private Date date_joined;
-	/**
+	/**	
 	 * @return the author_id
 	 */
 	public Integer getAuthor_id() {
@@ -44,14 +41,14 @@ public class PatternAuthor {
 	/**
 	 * @return the user_Language
 	 */
-	public String getUser_Language() {
-		return user_Language;
+	public String getUser_language() {
+		return user_language;
 	}
 	/**
 	 * @param user_Language the user_Language to set
 	 */
-	public void setUser_Language(String user_Language) {
-		this.user_Language = user_Language;
+	public void setUser_language(String user_Language) {
+		this.user_language = user_Language;
 	}
 	/**
 	 * @return the date_joined

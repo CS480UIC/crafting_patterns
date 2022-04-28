@@ -37,28 +37,28 @@ public class PatternAuthorServletRead extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		PatternAuthor entity1 = null;
-//		PatternAuthorDao entity1Dao = new PatternAuthorDao();
-//		
-//		try {
-//			entity1 = entity1Dao.findByAuthorId(request.getParameter("username"));
-//		} catch (ClassNotFoundException e1) {
-//			e1.printStackTrace();
-//		} catch (InstantiationException e1) {
-//			e1.printStackTrace();
-//		} catch (IllegalAccessException e1) {
-//			e1.printStackTrace();
-//		}
-//		
-//		if(entity1.getUsername()!=null){
-//					System.out.println(entity1);
-//					request.setAttribute("entity1", entity1);
-//					request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//			}
-//			else{
-//			request.setAttribute("msg", "Entity not found");
-//			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//		}
+		PatternAuthor pattern_author = null;
+		PatternAuthorDao authorDao = new PatternAuthorDao();
+		
+		try {
+			pattern_author = authorDao.findByAuthorId(Integer.parseInt(request.getParameter("author_id")));
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e1) {
+			e1.printStackTrace();
+		} catch (IllegalAccessException e1) {
+			e1.printStackTrace();
+		}
+		
+		if(pattern_author.getAuthor_id ()!=null){
+//					System.out.println(pattern_author);
+					request.setAttribute("pattern_author", pattern_author);
+					request.getRequestDispatcher("/jsps/pattern_author/pattern_author_read_output.jsp").forward(request, response);
+			}
+			else{
+			request.setAttribute("msg", "Pattern Author not found");
+			request.getRequestDispatcher("/jsps/pattern_author/pattern_author_read_output.jsp").forward(request, response);
+		}
 	}
 }
 

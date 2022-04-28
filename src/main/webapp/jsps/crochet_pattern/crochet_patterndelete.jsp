@@ -20,26 +20,14 @@
 
   </head>
   
-  <body>
-  <h1>Delete crochet_pattern</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<body>
+  <h1>Delete Crochet Pattern</h1>
+<form action="<c:url value='/Crochet_patternServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete pattern_link   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete Crochet Pattern with Pattern ID   :<input type="text" name="pattern_id" value="${form.pattern_id }"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_id }</span>
 	<br/>
-		Delete pattern_id   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Delete hook_size   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Delete author_id   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Delete category   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-	<input type="submit" value="Delete crochet_pattern"/>
+	<input type="submit" value="Delete Crochet Pattern"/>
 </form>
   </body>
 </html>

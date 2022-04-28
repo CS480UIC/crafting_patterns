@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update pattern_author</title>
+    <title>Update Pattern Author</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,34 @@
   </head>
   
   <body>
-  <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+  <h1>Update Pattern Author</h1>
+<form action="<c:url value='/PatternAuthorServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	author_id   :<input type="text" name="username" value="${form.author_id }"/>
-	<span style="color: red; font-weight: 900">${errors.author_id}</span>
+	Author ID    :<input type="text" name="author_id" value="${pattern_author.author_id }" disabled/>
 	<br/>
-		full_name：<input type="text" name="text" value="${form.full_name }"/>
-	<span style="color: red; font-weight: 900">${errors.full_name }</span>
+	Full Name：<input type="text" name="full_name" value="${pattern_author.full_name }"disabled/>
 	<br/>
-	language：<input type="text" name="email" value="${form.language }"/>
-	<span style="color: red; font-weight: 900">${errors.language }</span>
+	Language ：<input type="text" name="user_language" value="${pattern_author.user_language }"disabled/>
 	<br/>
-	<input type="submit" value="Update pattern_author"/>
+	Date Joined ：<input type="text" name="date_joined" value="${pattern_author.date_joined}"disabled/>
+	<br/>
+	<input type="submit" value="Update Pattern Author"/>
+	
 </form>
+<h1>Update the values below</h1>
+<form action="<c:url value='/PatternAuthorServletUpdate'/>" method="post">
+		<input type="hidden" name="method" value="update"/>
+		<input type="hidden" name="author_id" value="${pattern_author.author_id }"/>
+	Full Name：<input type="text" name="full_name" value="${form.full_name }"/>
+	<br/>
+	Language ：<input type="text" name="user_language" value="${form.user_language }"/>
+	<br/>
+	Date Joined ：<input type="text" name="date_joined" value="${form.date_joined}"/>
+	<br/>
+	<input type="submit" value="Update Pattern Author"/>
+	
+</form>
+
   </body>
+  
 </html>

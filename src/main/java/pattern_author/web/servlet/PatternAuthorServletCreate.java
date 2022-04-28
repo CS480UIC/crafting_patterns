@@ -52,7 +52,7 @@ public class PatternAuthorServletCreate extends HttpServlet {
 		}
 		form.setAuthor_id(Integer.parseInt(info.get(0)));
 		form.setFull_name(info.get(1));
-		form.setUser_Language(info.get(2));		
+		form.setUser_language(info.get(2));		
 		form.setDate_joined(java.sql.Date.valueOf(info.get(3)));	
 		
 		try {

@@ -23,17 +23,18 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/PatternAuthorServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="author_id" value="${pattern_author.author_id }"/>
-	author_id    :<input type="text" name="author_id" value="${pattern_author.author_id}" disabled/>
+	Author ID    :<input type="text" name="author_id" value="${pattern_author.author_id }" disabled/>
 	<br/>
-	
-	full_name：<input type="text" name="full_name" value="${pattern_author.full_name }" disabled/>
+	Full Name：<input type="text" name="full_name" value="${pattern_author.full_name }"disabled/>
 	<br/>
-	language	：<input type="text" name="language" value="${pattern_author.language }" disabled/>
+	Language ：<input type="text" name="user_language" value="${pattern_author.user_language }"disabled/>
 	<br/>
-	<input type="submit" value="Delete pattern_author"/>
+	Date Joined ：<input type="text" name="date_joined" value="${pattern_author.date_joined}"disabled/>
+	<br/>
+	<input type="submit" value="Delete Pattern Author"/>
 </form>
 
 </body>

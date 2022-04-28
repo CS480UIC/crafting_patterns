@@ -2,6 +2,51 @@
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
+    
+    <servlet>
+    <description></description>
+    <display-name>PatternAuthorServletCreate</display-name>
+    <servlet-name>PatternAuthorServletCreate</servlet-name>
+    <servlet-class>pattern_author.web.servlet.PatternAuthorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatternAuthorServletCreate</servlet-name>
+    <url-pattern>/PatternAuthorServletCreate</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PatternAuthorServletRead</display-name>
+    <servlet-name>PatternAuthorServletRead</servlet-name>
+    <servlet-class>pattern_author.web.servlet.PatternAuthorServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatternAuthorServletRead</servlet-name>
+    <url-pattern>/PatternAuthorServletRead</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PatternAuthorServletUpdate</display-name>
+    <servlet-name>PatternAuthorServletUpdate</servlet-name>
+    <servlet-class>pattern_author.web.servlet.PatternAuthorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatternAuthorServletUpdate</servlet-name>
+    <url-pattern>/PatternAuthorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PatternAuthorServletDelete</display-name>
+    <servlet-name>PatternAuthorServletDelete</servlet-name>
+    <servlet-class>pattern_author.web.servlet.PatternAuthorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatternAuthorServletDelete</servlet-name>
+    <url-pattern>/PatternAuthorServletDelete</url-pattern>
+  </servlet-mapping>
+  
     <servlet>
     <description></description>
     <display-name>Crochet_patternServletCreate</display-name>

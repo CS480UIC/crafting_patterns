@@ -46,7 +46,7 @@ public class PatternAuthorDao {
 		    		author.setAuthor_id(id);
 		    		author.setDate_joined(java.sql.Date.valueOf(resultSet.getString("date_joined")));
 		    		author.setFull_name(resultSet.getString("full_name"));
-		    		author.setUser_Language(resultSet.getString("user_language"));
+		    		author.setUser_language(resultSet.getString("user_language"));
 		    	}
 		    }
 		    connect.close();
@@ -73,7 +73,7 @@ public class PatternAuthorDao {
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getAuthor_id());
 		    preparestatement.setString(2,form.getFull_name());
-		    preparestatement.setString(3,form.getUser_Language());
+		    preparestatement.setString(3,form.getUser_language());
 		    preparestatement.setDate(4,form.getDate_joined());
 		    preparestatement.executeUpdate();
 		    connect.close();
@@ -90,42 +90,42 @@ public class PatternAuthorDao {
 	 * @throws IllegalAccessException
 	 */
 	public void update(PatternAuthor form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/crafting_patterns", MySQL_user, MySQL_password);
-//			
-//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,form.getPassword());
-//			preparestatement.setString(2,form.getEmail());
-//		    preparestatement.setString(3,form.getUsername());
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/crafting_patterns", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE pattern_author SET full_name = ?, user_language = ?, date_joined = ? where author_id = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,form.getFull_name());
+			preparestatement.setString(2,form.getUser_language());
+		    preparestatement.setDate(3,form.getDate_joined());
+		    preparestatement.setInt(4,form.getAuthor_id());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
 	}
 	
 	
 	/**
-	 * @param username
+	 * @param author_id
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/crafting_patterns", MySQL_user, MySQL_password);
-//			
-//			String sql = "delete from entity1 where username = ?";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,username);
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
-}
+	public void delete(Integer author_id) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/crafting_patterns", MySQL_user, MySQL_password);
+			
+			String sql = "delete from pattern_author where author_id = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setInt(1,author_id);
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }

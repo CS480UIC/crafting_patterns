@@ -35,45 +35,44 @@ public class PatternAuthorServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String method = request.getParameter("method");
-//		PatternAuthorDao entity1Dao = new PatternAuthorDao();
-//		PatternAuthor entity1 = null;
-//		if(method.equals("search"))
-//		{
-//			try {
-//				entity1 = entity1Dao.findByAuthorId(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//		
-//			if(entity1.getUsername()!=null){
-//						System.out.println(entity1);
-//						request.setAttribute("entity1", entity1);
-//						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
-//				}
-//				else{
-//				request.setAttribute("msg", "Entity not found");
-//				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//			}
-//		}
-//		else if(method.equals("delete"))
-//		{	
-//			try {
-//				entity1Dao.delete(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//			request.setAttribute("msg", "Entity Deleted");
-//			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//		}
+		String method = request.getParameter("method");
+		PatternAuthorDao authorDao = new PatternAuthorDao();
+		PatternAuthor author = null;
+		if(method.equals("search"))
+		{
+			try {
+				author = authorDao.findByAuthorId(Integer.parseInt(request.getParameter("author_id")));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+		
+			if(author.getAuthor_id()!=null){
+						request.setAttribute("pattern_author", author);
+						request.getRequestDispatcher("/jsps/pattern_author/pattern_author_delete_output.jsp").forward(request, response);			
+				}
+				else{
+				request.setAttribute("msg", "Pattern author not found");
+				request.getRequestDispatcher("/jsps/pattern_author/pattern_author_output.jsp").forward(request, response);
+			}
+		}
+		else if(method.equals("delete"))
+		{	
+			try {
+				authorDao.delete(Integer.parseInt(request.getParameter("author_id")));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "Pattern Author Deleted");
+			request.getRequestDispatcher("/jsps/pattern_author/pattern_author_read_output.jsp").forward(request, response);
+		}
 	}
 }
 

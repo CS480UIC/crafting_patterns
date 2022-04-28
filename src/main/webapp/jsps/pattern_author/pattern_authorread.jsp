@@ -21,20 +21,14 @@
   </head>
   
   <body>
-  <h1>Read pattern_author</h1>
+  <h1>Read a Pattern Author</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/PatternAuthorServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	author_id    :<input type="text" name="username" value="${form.author_id }"/>
+	Author ID   :<input type="text" name="author_id" value="${form.author_id }"/>
 	<span style="color: red; font-weight: 900">${errors.author_id }</span>
 	<br/>
-	full_name：<input type="text" name="text" value="${form.full_name}"/>
-	<span style="color: red; font-weight: 900">${errors.full_name }</span>
-	<br/>
-	language	：<input type="text" name="email" value="${form.language }"/>
-	<span style="color: red; font-weight: 900">${errors.language }</span>
-	<br/> 
-	<input type="submit" value="Read pattern_author"/>
+	<input type="submit" value="Read Pattern Author"/>
 </form>
   </body>
 </html>

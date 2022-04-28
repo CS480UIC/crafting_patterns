@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete pattern_author</title>
+    <title>Delete Pattern Author</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,14 @@
   </head>
   
   <body>
-  <h1>Delete pattern_author</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+  <h1>Delete Pattern Author</h1>
+<form action="<c:url value='/PatternAuthorServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete author_id   :<input type="text" name="username" value="${form.author_id }"/>
+	Delete by Author ID   :<input type="text" name="author_id" value="${form.author_id }"/>
 	<span style="color: red; font-weight: 900">${errors.author_id }</span>
 	<br/>
 	
-	<input type="submit" value="Delete pattern_author"/>
+	<input type="submit" value="Delete Pattern Author"/>
 </form>
   </body>
 </html>

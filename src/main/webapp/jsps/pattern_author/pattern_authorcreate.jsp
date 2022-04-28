@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>pattern_author Create</title>
+    <title>Create Pattern Author</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,16 +21,19 @@
   </head>
   
   <body>
-  <h1>pattern_author Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	author_id    :<input type="text" name="username" value="${form.author_id }"/>
+  <h1> Create Pattern Author</h1>
+<form action="<c:url value='/PatternAuthorServletCreate'/>" method="post">
+	Author ID    :<input type="text" name="author_id" value="${form.author_id }"/>
 	<span style="color: red; font-weight: 900">${errors.author_id }</span>
 	<br/>
-	full_name：<input type="text" name="text" value="${form.full_name }"/>
+	Full Name：<input type="text" name="full_name" value="${form.full_name }"/>
 	<span style="color: red; font-weight: 900">${errors.full_name }</span>
 	<br/>
-	language：<input type="text" name="email" value="${form.language }"/>
+	Language：<input type="text" name="language" value="${form.language }"/>
 	<span style="color: red; font-weight: 900">${errors.language }</span>
+	<br/>
+	Date Joined：<input type="text" name="date_joined" value="${form.date_joined}"/>
+	<span style="color: red; font-weight: 900">${errors.date_joined}</span>
 	<br/>
 	<input type="submit" value="Create pattern_author"/>
 </form>
