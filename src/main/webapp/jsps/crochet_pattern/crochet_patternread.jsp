@@ -23,21 +23,10 @@
   <body>
   <h1>Read crochet_pattern</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/crochet_patternServletRead'/>" method="post">
+<form action="<c:url value='/Crochet_patternServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	pattern_link    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		pattern_id    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		hook_size    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		pattern_author    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		category    :<input type="text" name="username" value="${form.username }"/>
+
+		pattern_id    :<input type="text" name="pattern_id" value="${form.pattern_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>

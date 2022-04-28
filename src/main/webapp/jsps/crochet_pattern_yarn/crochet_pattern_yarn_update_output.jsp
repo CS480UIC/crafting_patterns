@@ -31,7 +31,7 @@
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/crochet_patternServletUpdate'/>" method="post">
+<form action="<c:url value='/Crochet_patternServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="pattern_link" value="${crochet_pattern.pattern_link }"/>
 	yarn_id：<input type="password" name="password" value="${form.pattern_id }"/>

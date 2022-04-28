@@ -33,7 +33,7 @@
 		Delete hook_size   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-		Delete pattern_author   :<input type="text" name="username" value="${form.username }"/>
+		Delete author_id   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 		Delete category   :<input type="text" name="username" value="${form.username }"/>

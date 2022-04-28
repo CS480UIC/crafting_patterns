@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update crochet_pattern_yarn</h1>
-<form action="<c:url value='/crochet_patternServletUpdate'/>" method="post">
+<form action="<c:url value='/Crochet_patternServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update User   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

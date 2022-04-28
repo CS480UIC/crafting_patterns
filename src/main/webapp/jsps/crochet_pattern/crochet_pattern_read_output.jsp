@@ -21,18 +21,18 @@
   </head>
   
   <body>
-  <h1>Read crochet_pattern Output</h1>
+  <h1>Read Crochet Pattern Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	pattern_link    :<input type="text" name="pattern_link" value="${crochet_pattern.pattern_link }" disabled/>
+	Pattern ID    :<input type="text" name="pattern_id" value="${crochet_pattern.pattern_id }" disabled/>
 	<br/>
-	pattern_id    :<input type="text" name="pattern_id" value="${crochet_pattern.pattern_id }" disabled/>
+	Pattern Link   :<input type="text" name="pattern_link" value="${crochet_pattern.pattern_link }" disabled/>
 	<br/>
-	hook_size：<input type="text" name="hook_size" value="${crochet_pattern.hook_size }" disabled/>
+	Hook Size ：<input type="text" name="hook_size" value="${crochet_pattern.hook_size }" disabled/>
 	<br/>
-	pattern_author	：<input type="text" name="pattern_author" value="${crochet_pattern.pattern_author }" disabled/>
+	Author ID	：<input type="text" name="author_id" value="${crochet_pattern.author_id }" disabled/>
 	<br/>
-	category	：<input type="text" name="category" value="${crochet_pattern.pattern_author }" disabled/>
+	Category	：<input type="text" name="category" value="${crochet_pattern.category }" disabled/>
 	<br/>
 </form>
 

@@ -21,27 +21,13 @@
   </head>
   
   <body>
-  <h1>Update crochet_pattern_yarn</h1>
-<form action="<c:url value='/crochet_patternServletUpdate'/>" method="post">
+  <h1>Update crochet_pattern</h1>
+<form action="<c:url value='/Crochet_patternServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Update pattern_id   :<input type="text" name="pattern_id" value="${form.pattern_id }"/>
+	<span style="color: red; font-weight: 900">${errors.pattern_id }</span>
 	<br/>
-		Update pattern_link   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Update pattern_id   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Update hook_size   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-		Update pattern_author   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-			Update category   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
+
 	<input type="submit" value="Update crochet_pattern"/>
 </form>
   </body>

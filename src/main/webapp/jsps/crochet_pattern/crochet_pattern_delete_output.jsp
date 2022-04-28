@@ -35,7 +35,7 @@
 	
 	hook_size：<input type="text" name="hook_size" value="${crochet_pattern.hook_size }" disabled/>
 	<br/>
-	pattern_author	：<input type="text" name="pattern_author" value="${crochet_pattern.pattern_author }" disabled/>
+	author_id	：<input type="text" name="author_id" value="${crochet_pattern.author_id }" disabled/>
 	<br/>
 	category	：<input type="text" name="category" value="${crochet_pattern.category}" disabled/>
 	<br/>

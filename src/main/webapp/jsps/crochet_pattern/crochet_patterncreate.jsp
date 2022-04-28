@@ -22,7 +22,7 @@
   
   <body>
   <h1>crochet_pattern Create</h1>
-<form action="<c:url value='/crochet_patternServletCreate'/>" method="post">
+<form action="<c:url value='/Crochet_patternServletCreate'/>" method="post">
 	pattern_link    :<input type="text" name="pattern_link" value="${form.pattern_link }"/>
 	<span style="color: red; font-weight: 900">${errors.pattern_link }</span>
 	<br/>
@@ -32,8 +32,8 @@
 	hook_size	：<input type="text" name="hook_size" value="${form.hook_size }"/>
 	<span style="color: red; font-weight: 900">${errors.hook_size }</span>
 	<br/>
-	pattern_author	：<input type="text" name="pattern_author" value="${form.pattern_author }"/>
-	<span style="color: red; font-weight: 900">${errors.pattern_author }</span>
+	author_id	：<input type="text" name="author_id" value="${form.author_id }"/>
+	<span style="color: red; font-weight: 900">${errors.author_id }</span>
 	<br/>
 	category	：<input type="text" name="category" value="${form.category }"/>
 	<span style="color: red; font-weight: 900">${errors.category }</span>
