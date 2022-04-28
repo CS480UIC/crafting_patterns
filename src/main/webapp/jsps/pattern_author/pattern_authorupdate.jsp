@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update pattern_author</title>
+    <title>Delete Entity</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,29 @@
   </head>
   
   <body>
-  <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	author_id   :<input type="text" name="username" value="${form.author_id }"/>
-	<span style="color: red; font-weight: 900">${errors.author_id}</span>
+  <h1>Update Entity</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	author_id    :<input type="text" name="author_id" value="${pattern_author.author_id }" disabled/>
 	<br/>
-		full_name：<input type="text" name="text" value="${form.full_name }"/>
+	
+	full_name：<input type="text" name="full_name" value="${pattern_author.full_name }" disabled />
+	<br/>
+	language	：<input type="text" name="language" value="${pattern_author.language }" disabled/>
+	<br/>
+</form>
+<h1>Update the values below</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+		<input type="hidden" name="method" value="update"/>
+				<input type="hidden" name="username" value="${pattern_author.author_id }"/>
+	Password：<input type="password" name="password" value="${form.full_name }"/>
 	<span style="color: red; font-weight: 900">${errors.full_name }</span>
 	<br/>
-	language：<input type="text" name="email" value="${form.language }"/>
+	Email	：<input type="text" name="email" value="${form.language }"/>
 	<span style="color: red; font-weight: 900">${errors.language }</span>
 	<br/>
 	<input type="submit" value="Update pattern_author"/>
 </form>
-  </body>
+
+</body>
 </html>
