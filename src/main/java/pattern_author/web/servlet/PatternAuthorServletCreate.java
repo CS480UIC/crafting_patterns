@@ -41,7 +41,7 @@ public class PatternAuthorServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PatternAuthorService entity1service = new PatternAuthorService();
+		PatternAuthorService patternAuthorService = new PatternAuthorService();
 		Map<String,String[]> paramMap = request.getParameterMap();
 		PatternAuthor form = new PatternAuthor();
 		List<String> info = new ArrayList<String>();
@@ -56,7 +56,7 @@ public class PatternAuthorServletCreate extends HttpServlet {
 		form.setDate_joined(java.sql.Date.valueOf(info.get(3)));	
 		
 		try {
-			entity1service.create(form);
+			patternAuthorService.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 			
 		} catch (ClassNotFoundException | PatternAuthorException e) {

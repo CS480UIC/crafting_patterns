@@ -57,7 +57,7 @@ public class PatternAuthorDao {
 	}	
 	
 	/**
-	 * insert Entity1
+	 * insert 
 	 * @param form
 	 * @throws ClassNotFoundException 
 	 * @throws IllegalAccessException 

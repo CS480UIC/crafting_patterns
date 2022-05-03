@@ -24,11 +24,11 @@ INSERT INTO `yarn` (`yarn_id`, `weight`, `yardage`, `fiber`, `recommended_hook_s
 CREATE TABLE pattern_author  (
 	author_id INT auto_increment,
     full_name VARCHAR(45),
-    userLanguage VARCHAR(45),
+    user_language VARCHAR(45),
     date_joined DATE,
     primary key (author_id)
     );
-INSERT INTO `pattern_author` (`author_id`, `full_name`, `userLanguage`, `date_joined`) VALUES (1,'Drake Shane','English','2012-02-15'),(2,'Carmela Soprano','Italian','2017-10-30'),(3,'Clifford Redding','Woof','2019-05-28'),(4,'Blake Mane','Englando','2001-01-02'),(5,'Takanashi Kiara','Japanese','2003-06-04');
+INSERT INTO `pattern_author` (`author_id`, `full_name`, `user_language`, `date_joined`) VALUES (1,'Drake Shane','English','2012-02-15'),(2,'Carmela Soprano','Italian','2017-10-30'),(3,'Clifford Redding','Woof','2019-05-28'),(4,'Blake Mane','Englando','2001-01-02'),(5,'Takanashi Kiara','Japanese','2003-06-04');
 CREATE TABLE knitting_pattern (
 	pattern_id INT,
     pattern_link VARCHAR(45) UNIQUE,

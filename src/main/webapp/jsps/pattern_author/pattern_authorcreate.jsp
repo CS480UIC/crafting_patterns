@@ -29,7 +29,7 @@
 	Full Name：<input type="text" name="full_name" value="${form.full_name }"/>
 	<span style="color: red; font-weight: 900">${errors.full_name }</span>
 	<br/>
-	Language：<input type="text" name="language" value="${form.language }"/>
+	Language：<input type="text" name="user_language" value="${form.user_language }"/>
 	<span style="color: red; font-weight: 900">${errors.language }</span>
 	<br/>
 	Date Joined：<input type="text" name="date_joined" value="${form.date_joined}"/>

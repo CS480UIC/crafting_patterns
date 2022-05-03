@@ -1,4 +1,4 @@
-author_id (PK) (INT),full_name VARCHAR(45),userLanguage VARCHAR(45),date_joined
+author_id (PK) (INT),full_name VARCHAR(45),user_language VARCHAR(45),date_joined
 1,Drake Shane,English,2012-15-02
 2,Carmela Soprano,Italian,2017-30-10
 3,Clifford Redding,Woof,2019-28-05

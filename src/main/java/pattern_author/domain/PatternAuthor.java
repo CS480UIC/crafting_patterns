@@ -39,22 +39,24 @@ public class PatternAuthor {
 		this.full_name = full_name;
 	}
 	/**
-	 * @return the user_Language
-	 */
-	public String getUser_language() {
-		return user_language;
-	}
-	/**
-	 * @param user_Language the user_Language to set
-	 */
-	public void setUser_language(String user_Language) {
-		this.user_language = user_Language;
-	}
+
 	/**
 	 * @return the date_joined
 	 */
 	public Date getDate_joined() {
 		return date_joined;
+	}
+	/**
+	 * @return the user_language
+	 */
+	public String getUser_language() {
+		return user_language;
+	}
+	/**
+	 * @param user_language the user_language to set
+	 */
+	public void setUser_language(String user_language) {
+		this.user_language = user_language;
 	}
 	/**
 	 * @param date_joined the date_joined to set
