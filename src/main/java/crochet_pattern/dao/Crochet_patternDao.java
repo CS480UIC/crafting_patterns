@@ -57,7 +57,7 @@ public class Crochet_patternDao {
 	}	
 	
 	/**
-	 * insert Entity1
+	 * insert crochet_pattern
 	 * @param form
 	 * @throws ClassNotFoundException 
 	 * @throws IllegalAccessException 

@@ -60,11 +60,11 @@ public class InitDao {
 		    extracted(connect, "CREATE TABLE pattern_author (" +
 		    "	author_id INT auto_increment,\n" +
 		    "    full_name VARCHAR(45),\n" +
-		    "    userLanguage VARCHAR(45),\n" +
+		    "    user_language VARCHAR(45),\n" +
 		    "    date_joined DATE,\n" +
 		    "    primary key (author_id)\n" +
 		    "    );\n" );
-		    extracted(connect, "INSERT INTO `pattern_author` (`author_id`, `full_name`, `userLanguage`, `date_joined`) VALUES (1,'Drake Shane','English','2012-02-15'),(2,'Carmela Soprano','Italian','2017-10-30'),(3,'Clifford Redding','Woof','2019-05-28'),(4,'Blake Mane','Englando','2001-01-02'),(5,'Takanashi Kiara','Japanese','2003-06-04');\n");
+		    extracted(connect, "INSERT INTO `pattern_author` (`author_id`, `full_name`, `user_language`, `date_joined`) VALUES (1,'Drake Shane','English','2012-02-15'),(2,'Carmela Soprano','Italian','2017-10-30'),(3,'Clifford Redding','Woof','2019-05-28'),(4,'Blake Mane','Englando','2001-01-02'),(5,'Takanashi Kiara','Japanese','2003-06-04');\n");
 		    extracted(connect, "CREATE TABLE knitting_pattern (\n" +
 		    "	pattern_id INT,\n" +
 		    "    pattern_link VARCHAR(45) UNIQUE,\n" +
